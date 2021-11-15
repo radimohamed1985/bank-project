@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+}
+
+
+/* the top nav bar style start from here */
+
+.TopNav {
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+.TopNav p {
+    margin-top: -20px;
+}
+
+.langs span {
+    font-size: small;
+    size: 16px;
+    line-height: 17px;
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+input {
+    border-style: solid;
+    border-bottom-color: white;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    background-color: transparent;
+    outline-style: none;
+    padding-top: 10px;
+    direction: rtl;
+}
+
+svg:not(:root).svg-inline--fa {
+    color: white;
+    margin: 10px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+
+/* topnav style end here 
+ */
+
+
+/* start the main navbar  */
+
+.navbar,
+.navbar-nav {
+    direction: rtl;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 12px;
+    font-weight: 700;
+    color: #3e7a33;
+    background-color: #FFFFFF;
+    height: fit-content;
+}
+
+.dropdown-menu {
+    margin-top: 1.2rem!important;
+    width: 100% !important;
+    position: relative;
+    border-style: none !important;
+}
+
+.dropdown-toggle {
+    margin-top: 10px;
+}
+
+.dropdown-toggle,
+.nav-link {
+    color: #5e6168 !important;
+    text-decoration: none;
+    font-weight: 600 !important;
+    font-size: small;
+    margin-left: 10px;
+}
+
+
+/* main nav bar end  */
+
+.mainSection {
+    background-image: url(../image/main.png);
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+}
+
+
+/* start third section  */
+
+.secandsection {
+    background-image: url(../image/highlight_logo.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 190px;
+    height: 300px;
+    padding: 0;
+    margin-top: -80px;
+}
+
+@media (max-width:400px) {
+    .secandsection {
+        margin-top: -40px;
+    }
+}
+
+@media (max-width:1000px) {
+    .secandsection {
+        margin-top: -200px;
+    }
+}
+
+.secandsection h6 {
+    color: #3e7a33;
+}
+
+.secandsection p {
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 500;
+    color: #5e6168;
+    direction: rtl;
+}
+
+.secandsection p::before {
+    content: url(../image/box.png);
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 500;
+}
+
+
+/* ruls and condition start */
+
+.ruls {
+    direction: rtl;
+    background-color: #fafafa;
+    margin-bottom: 30px;
+}
+
+.ruls h6 {
+    color: #3e7a33;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.ruls p::before {
+    content: url(../image/box.png);
+}
+
+.ruls h6::before {
+    content: url(../image/documents.png);
+}
+
+.accordion-button:not(.collapsed),
+.accordion-body {
+    background-color: #fafafa !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: "" !important;
+    color: 3e7a33;
+    background-image: url(../image/left-arrow-in-circle-outline.png) !important;
+    background-position-x: 0px;
+    margin-right: 530px;
+    background-size: 99%;
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(../image/left-arrow-in-circle-outline.png);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    margin-right: 530px;
+    background-size: 99%;
+    transition: transform .2s ease-in-out;
+}
+
+
+/* ruls section end  */
+
+
+/* form for apply start ////////////////////////////////////////////////*/
+
+.forms {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    direction: rtl;
+}
+
+.forms h3 {
+    margin-bottom: 40px;
+    color: black;
+}
+
+input::placeholder {
+    font-size: smaller;
+}
+
+.fastlink {
+    background-color: #dce7da;
+    height: 450px;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.fastlink h3 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.fastlink h5 {
+    color: #3e7a33;
+}
+
+@media (max-width:800px) {
+    .fastlink {
+        background-color: #dce7da;
+        height: 850px;
+        padding: 30px;
+        margin-bottom: 100px;
+    }
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    background-image: url(../image/Path_5175.png);
+    background-repeat: no-repeat;
+    padding-top: 95px;
+    margin-left: 20px;
+}
+
+@media(max-width:400px) {
+    .card {
+        width: 200px;
+        height: 300px;
+        background-image: url(../image/Path_5175.png);
+        background-repeat: no-repeat;
+        padding-top: 95px;
+    }
+}
+
+@media(max-width:1000px) {
+    .card {
+        width: 300px;
+        height: 300px;
+        background-image: url(../image/Path_5175.png);
+        background-repeat: no-repeat;
+        padding-top: 95px;
+    }
+}
+
+.store {
+    width: 200px;
+    height: 75px;
+}
+
+
+/* ######################## contact us start####################### */
+
+.contactus {
+    background-repeat: no-repeat;
+    direction: rtl;
+    height: max-content;
+    margin-bottom: 10px;
+}
+
+.contactus h3 {
+    color: #3e7a33;
+    margin-top: 60px;
+}
+
+.contactus img {
+    transform: rotatey(180deg);
+}
+
+.contactus a {
+    position: absolute;
+    left: 170px;
+    margin-top: -86px;
+    color: #3e7a33;
+}
+
+@media(max-width:500px) {
+    .contactus a {
+        position: absolute;
+        left: 40px;
+        margin-top: -86px;
+    }
+}
+
+
+/* ############## contact us end */
+
+
+/* footer start  */
+
+footer {
+    background-color: #222222;
+    height: 400px;
+    direction: rtl;
+    padding-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    footer {
+        background-color: #222222;
+        height: 800px;
+        direction: rtl;
+        padding-top: 20px;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+footer .mainimg {
+    z-index: 999;
+    width: 100%;
+    height: 80px;
+}
+
+footer p,
+h6,
+li {
+    color: white;
+    font-size: 12px;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li::before {
+    content: url(../image/Group_639.png);
+    transform: rotate(180deg) translatex(-100%);
+    position: absolute;
+}
+
+.size {
+    margin-top: 70px;
+}
+
+
+/* footer end  */
+
+
+/* dropdown fixed button start */
+
+.dropend {
+    position: fixed !important;
+    left: 0;
+    bottom: 0;
+}
+
+.dropend .dropdown-menu {
+    background-color: #3e7a33;
+    opacity: .6;
+    color: white;
+    text-align: center;
+    z-index: 1000;
+}
